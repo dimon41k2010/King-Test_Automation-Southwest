@@ -74,7 +74,6 @@ try:
     print("Button 'Nonstop' clicked.")
 except:
     try:
-
         time.sleep(5)
         l=driver.find_element_by_xpath("//button[@aria-label='Display only Nonstop flights.']"); #only nonstop if aviable
         l.click()
@@ -86,7 +85,6 @@ l=driver.find_element_by_css_selector(elements['yellow_button'])
 l.click()
 print("Yellow box clicked.")
 time.sleep(2) #to be elegant
-
 
 l=driver.find_elements_by_class_name(elements['pre_price'])
 temp_cost=int(l[2].text)
@@ -100,8 +98,7 @@ time.sleep(2)
 l=driver.find_element_by_css_selector(elements['post_date'])
 
 if input_val['Date'] in l.text:
-    print(f"Date is the same: {input_val['Date']}")
-
+    print(f"Date is the same: {input_val['Date']}"
 time.sleep(2)
 
 l=driver.find_element_by_css_selector(elements['post_price'])
@@ -110,6 +107,7 @@ temp_cost2=math.ceil(float(l.text.replace('$','')))
 if temp_cost == temp_cost2:
     print(f"Price is the same! - ${temp_cost}")
 time.sleep(2)
+
 l=driver.find_elements_by_css_selector(elements['d-a-code'])
 
 if l[0].text in input_val['Departing_code']:
