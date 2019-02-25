@@ -1,7 +1,10 @@
 # King-Test_Automation-Southwest
 Here are two test framework: for windows OS and macOS. MacOS is adopted for python 2.7, windows OS for python 3.7.
-To execute following test suit you will be needed chromedriver, selenium and python (version depend on the OS platform you will be using). 
-After you successfully instal the chromedriver then you should specify it path in the code (line 33 for windows OS). 
+To execute following test suits you will be needed chromedriver, selenium and python (version depend on the OS platform you will be using).
+I am currently using Google Chrome browser, but you can change to any other browser, only change a few lines. If you decided to use Google Chrome, you need to install first, then find supporting version of the chromedriver. You can find it here:
+http://chromedriver.chromium.org/downloads. 
+For other browsers actions are similar.
+After you successfully install the chromedriver then you should specify it path in the code (line 33 for windows OS). 
 
 Running the following script with take you through test case that was assigned:
 1. Navigated the browser to www.southwest.com.
@@ -18,5 +21,5 @@ previous page.
 
 Logs are printed in the console. 
 
-Please refer to a video if you have different result: 
-https://www.screencast.com/t/2NFgU742r
+Please refer to a video if you have different result: https://www.screencast.com/t/2NFgU742r
+
