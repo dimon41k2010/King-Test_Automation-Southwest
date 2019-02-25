@@ -108,7 +108,7 @@ l=driver.find_element_by_css_selector(elements['post_price'])
 temp_cost2=math.ceil(float(l.text.replace('$','')))
 
 if temp_cost == temp_cost2:
-    print(f"Price is the same! - {temp_cost}$")
+    print(f"Price is the same! - ${temp_cost}")
 time.sleep(2)
 l=driver.find_elements_by_css_selector(elements['d-a-code'])
 
